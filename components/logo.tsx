@@ -51,8 +51,16 @@ export default function Logo({ size = "medium", className = "" }: LogoProps) {
         width={nameWidth}
         height={nameWidth * 0.4}
         className="h-auto"
+        priority
       />
-      <Image src="/images/logo-gylt-gem.png" alt="gYlt Gem" width={gemWidth} height={gemHeight} className="h-auto" />
+      <Image
+        src="/images/logo-gylt-gem.png"
+        alt="gYlt Gem"
+        width={gemWidth}
+        height={gemHeight}
+        className="h-auto"
+        priority
+      />
     </div>
   )
 }
