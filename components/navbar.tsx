@@ -13,7 +13,7 @@ const navItems = [
   { name: "Comment", href: "#how" },
   { name: "Économies", href: "#savings" },
   { name: "Le modèle", href: "#business" },
-  { name: "Inscription", href: "#signup" },
+  { name: "Ton avis", href: "#signup" },
 ]
 
 export default function Navbar() {
@@ -108,11 +108,9 @@ export default function Navbar() {
 
             {/* Bouton CTA */}
             <a
-              href="#signup"
-              onClick={(e) => {
-                e.preventDefault()
-                handleNavigation("signup")
-              }}
+              href="https://prototype.gylt.space"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white font-medium py-2 px-4 rounded-full text-sm shadow-md transition-all duration-300 transform hover:scale-105 cursor-pointer"
             >
               Tester en avant-première

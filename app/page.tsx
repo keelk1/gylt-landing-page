@@ -329,7 +329,7 @@ export default function Home() {
             <div className="max-w-3xl mx-auto mb-10">
               <SectionTitle alignment="center" highlightText={false}>
                 <HighlightText className="text-green-600 dark:text-green-400">
-                  Rejoins la première vague d&apos;utilisateurs
+                  Exprime toi et prend de nos nouvelles
                 </HighlightText>
               </SectionTitle>
             </div>
@@ -350,11 +350,11 @@ export default function Home() {
                   type="submit"
                   className="bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 cursor-pointer transform hover:scale-105"
                 >
-                  Tester gYlt en avant-première
+                  Reste au courant et fait tes retours
                 </AnimatedButton>
               </div>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-3 text-center">
-                Rejoins les premiers à tester gYlt. Promis, pas de spam.
+                Aide nous a améliorer le produit qui va te faire économiser. Promis, pas de spam.
               </p>
             </form>
           </SectionTransition>
