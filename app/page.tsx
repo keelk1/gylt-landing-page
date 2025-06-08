@@ -98,7 +98,7 @@ export default function Home() {
           </SectionTransition>
 
           {/* Vidéo à droite */}
-          <div className="flex-1 mt-8 md:mt-0">
+          <div className="p-0 m-0">
             <PrototypeVideo />
           </div>
         </motion.div>
