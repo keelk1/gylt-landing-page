@@ -19,29 +19,36 @@ export default function PrototypeVideo({ className = "" }: PrototypeVideoProps) 
   }, [])
 
   return (
-    <div className="w-full flex justify-center">
-      <motion.div
-        className={`rounded-[36px] overflow-hidden shadow-2xl bg-black ${className}`}
-        style={{ width: 840, height: 1860 }}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
+    <motion.div
+      className={`rounded-[40px] overflow-hidden shadow-2xl ${className}`}
+      style={{
+        width: '420px',
+        height: '930px',
+        backgroundColor: 'black',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.5 }}
+    >
+      <video
+        ref={videoRef}
+        className="rounded-[40px] object-cover"
+        style={{
+          width: '100%',
+          height: '100%',
+        }}
+        autoPlay
+        loop
+        muted
+        playsInline
+        src="/videos/prototype-demo.mp4"
       >
-        <video
-          ref={videoRef}
-          width={840}
-          height={1860}
-          className="rounded-[36px] object-cover shadow-xl"
-          autoPlay
-          loop
-          muted
-          playsInline
-          src="/videos/prototype-demo.mp4"
-        >
-          <source src="/videos/prototype-demo.mp4" type="video/mp4" />
-          Votre navigateur ne supporte pas la lecture de vidéos.
-        </video>
-      </motion.div>
-    </div>
+        <source src="/videos/prototype-demo.mp4" type="video/mp4" />
+        Votre navigateur ne supporte pas la lecture de vidéos.
+      </video>
+    </motion.div>
   )
 }
