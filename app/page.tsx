@@ -2,6 +2,7 @@
 
 import type React from "react"
 
+import { ShoppingCart } from "lucide-react";
 import { Repeat } from "lucide-react";
 import Link from "next/link";
 import { useRef, useState } from "react"
