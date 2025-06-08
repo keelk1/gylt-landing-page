@@ -25,8 +25,8 @@ export default function PrototypeVideo({ className = "" }: PrototypeVideoProps) 
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.5 }}
       style={{
-        width: '326px',
-        height: '720px',
+        width: '240px',
+        height: '480px',
         background: 'linear-gradient(135deg, #1f2937, #0f172a)',
         display: 'flex',
         justifyContent: 'center',
