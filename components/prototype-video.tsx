@@ -21,15 +21,17 @@ export default function PrototypeVideo({ className = "" }: PrototypeVideoProps) 
   return (
     <div className="w-full flex justify-center">
       <motion.div
-        className={`relative overflow-hidden rounded-[32px] shadow-[0_0_50px_rgba(8,112,84,0.4)] ${className}`}
+        className={`rounded-[36px] overflow-hidden shadow-2xl bg-black ${className}`}
+        style={{ width: 840, height: 1860 }}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.5 }}
-        style={{ width: '840px', height: '1860px' }}
       >
         <video
           ref={videoRef}
-          className="w-[840px] h-[1860px] object-cover rounded-[32px]"
+          width={840}
+          height={1860}
+          className="rounded-[36px] object-cover shadow-xl"
           autoPlay
           loop
           muted
