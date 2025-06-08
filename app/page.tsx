@@ -212,9 +212,10 @@ export default function Home() {
                 <div className="bg-green-100 dark:bg-green-900/30 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-inner">
                   <CreditCard size={28} className="text-green-600 dark:text-green-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 dark:text-white">Abonnements oubliés</h3>
+                <h3 className="text-xl font-semibold mb-2 dark:text-white">Abonnements oubliés & doublons</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  On détecte les prélèvements oubliés, les doublons et les abonnements non utilisés.
+                  gYlt repère les prélèvements récurrents que tu aurais pu oublier, ainsi que les services en doublon que tu pourrais regrouper ou arrêter.
+👉 On te les signale, tu choisis.
                 </p>
                 <div className="mt-auto">
                   <p className="font-bold text-green-600 dark:text-green-400 text-lg">+12€/mois économisés</p>
@@ -230,7 +231,7 @@ export default function Home() {
                 <div className="bg-green-100 dark:bg-green-900/30 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-inner">
                   <Calendar size={28} className="text-green-600 dark:text-green-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 dark:text-white">Meilleur timing</h3>
+                <h3 className="text-xl font-semibold mb-2 dark:text-white">Changer de fournisseur d’énergie</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Visualise les pics de dépenses et apprends à réduire au bon moment, sans te priver.
                 </p>
