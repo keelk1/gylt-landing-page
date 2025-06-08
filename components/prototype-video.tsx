@@ -1,13 +1,18 @@
 "use client"
 
 import { useRef, useEffect } from "react"
-import { motion } from "framer-motion"
 
 interface PrototypeVideoProps {
   className?: string
+  width?: number
+  height?: number
 }
 
-export default function PrototypeVideo({ className = "" }: PrototypeVideoProps) {
+export default function PrototypeVideo({
+  className = "",
+  width = 280,
+  height = 620
+}: PrototypeVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
@@ -20,21 +25,18 @@ export default function PrototypeVideo({ className = "" }: PrototypeVideoProps) 
 
   return (
     <video
-        ref={videoRef}
-        className="rounded-[40px] object-cover"
-        style={{
-          width: '100%',
-          height: '100%',
-        }}
-        autoPlay
-        loop
-        muted
-        playsInline
-        src="/videos/prototype-demo.mp4"
-      >
-        <source src="/videos/prototype-demo.mp4" type="video/mp4" />
-        Votre navigateur ne supporte pas la lecture de vidéos.
-      </video>
-    </motion.div>
+      ref={videoRef}
+      width={width}
+      height={height}
+      className={`object-cover ${className}`}
+      autoPlay
+      loop
+      muted
+      playsInline
+      src="/videos/prototype-demo.mp4"
+    >
+      <source src="/videos/prototype-demo.mp4" type="video/mp4" />
+      Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
   )
 }
