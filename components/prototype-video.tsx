@@ -11,7 +11,6 @@ export default function PrototypeVideo({ className = "" }: PrototypeVideoProps) 
   const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
-    // Assurer que la vidéo est en autoplay, loop et muted
     if (videoRef.current) {
       videoRef.current.play().catch((error) => {
         console.error("Erreur lors de la lecture automatique de la vidéo:", error)
@@ -20,27 +19,27 @@ export default function PrototypeVideo({ className = "" }: PrototypeVideoProps) 
   }, [])
 
   return (
-    <motion.div
-      className="relative overflow-hidden rounded-3xl shadow-[0_20px_50px_rgba(8,112,84,0.7)] dark:shadow-[0_20px_50px_rgba(34,197,94,0.4)]"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: 0.5 }}
-      style={{ width: '840px', height: '1860px' }}
-    >
-      <video
-        ref={videoRef}
-        width={840}
-        height={1860}
-        className="object-cover rounded-3xl"
-        autoPlay
-        loop
-        muted
-        playsInline
-        src="/videos/prototype-demo.mp4"
+    <div className="w-full flex justify-center">
+      <motion.div
+        className={`relative overflow-hidden rounded-[32px] shadow-[0_0_50px_rgba(8,112,84,0.4)] ${className}`}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        style={{ width: '840px', height: '1860px' }}
       >
-        <source src="/videos/prototype-demo.mp4" type="video/mp4" />
-        Votre navigateur ne supporte pas la lecture de vidéos.
-      </video>
-    </motion.div>
+        <video
+          ref={videoRef}
+          className="w-[840px] h-[1860px] object-cover rounded-[32px]"
+          autoPlay
+          loop
+          muted
+          playsInline
+          src="/videos/prototype-demo.mp4"
+        >
+          <source src="/videos/prototype-demo.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+      </motion.div>
+    </div>
   )
 }
