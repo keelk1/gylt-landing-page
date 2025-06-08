@@ -20,18 +20,18 @@ export default function PrototypeVideo({ className = "" }: PrototypeVideoProps) 
 
   return (
     <motion.div
-      className={`rounded-[40px] overflow-hidden shadow-2xl ${className}`}
+      className={`relative overflow-hidden rounded-[40px] shadow-2xl ${className}`}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.5 }}
       style={{
         width: '326px',
         height: '720px',
-        backgroundColor: 'black',
+        background: 'linear-gradient(135deg, #1f2937, #0f172a)',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
       }}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: 0.5 }}
     >
       <video
         ref={videoRef}
