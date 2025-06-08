@@ -218,7 +218,7 @@ export default function Home() {
 👉 On te les signale, tu choisis.
                 </p>
                 <div className="mt-auto">
-                  <p className="font-bold text-green-600 dark:text-green-400 text-lg">+12€/mois économisés</p>
+                  <p className="font-bold text-green-600 dark:text-green-400 text-lg">+100€/an économisés</p>
                 </div>
               </motion.div>
             </SectionTransition>
@@ -233,10 +233,11 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2 dark:text-white">Changer de fournisseur d’énergie</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Visualise les pics de dépenses et apprends à réduire au bon moment, sans te priver.
+                  gYlt repère les offres les plus avantageuses pour ton énergie, ton assurance, ton forfait téléphone/ internet et tout les services que tu utilise.
+👉 Tu choisis, on t’aide à changer en quelques clics.
                 </p>
                 <div className="mt-auto">
-                  <p className="font-bold text-green-600 dark:text-green-400 text-lg">-25% sur tes sorties</p>
+                  <p className="font-bold text-green-600 dark:text-green-400 text-lg">+240€/an économisés</p>
                 </div>
               </motion.div>
             </SectionTransition>
@@ -249,12 +250,13 @@ export default function Home() {
                 <div className="bg-green-100 dark:bg-green-900/30 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-inner">
                   <Target size={28} className="text-green-600 dark:text-green-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 dark:text-white">Objectifs malins</h3>
+                <h3 className="text-xl font-semibold mb-2 dark:text-white">Éviter les achats inutiles</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Fixe-toi des objectifs simples, basés sur tes habitudes — pas sur la culpabilité.
+                  On te montre tes dépenses trop fréquentes (livraisons, petits achats, snacks...) que tu pourrais facilement limiter.
+      👉 Tu gardes la main, mais tu dépenses mieux.
                 </p>
                 <div className="mt-auto">
-                  <p className="font-bold text-green-600 dark:text-green-400 text-lg">+480€/an économisé</p>
+                  <p className="font-bold text-green-600 dark:text-green-400 text-lg">+360€/an économisés</p>
                 </div>
               </motion.div>
             </SectionTransition>
