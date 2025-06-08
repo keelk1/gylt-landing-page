@@ -2,6 +2,8 @@
 
 import React from "react"
 
+import { Repeat } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
 import { useState, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Euro, CreditCard, Calendar, Target, HelpCircle, X } from "lucide-react"
@@ -166,14 +168,14 @@ export default function EnhancedSavingsEstimator() {
               delay={0.1}
             />
             <SavingsCard
-              icon={<Calendar size={18} className="text-green-600 dark:text-green-400" />}
+              icon={<Repeat size={18} className="text-green-600 dark:text-green-400" />}
               title="Changer de fournisseur"
               description="Optimise tes contrats en fonction de la concurrence"
               amount={savings.timing}
               delay={0.2}
             />
             <SavingsCard
-              icon={<Target size={18} className="text-green-600 dark:text-green-400" />}
+              icon={<ShoppingCart size={18} className="text-green-600 dark:text-green-400" />}
               title="Éviter les achats inutiles"
               description="Garde la main sur tes dépenses facilement et repère les postes inutiles"
               amount={savings.goals}
