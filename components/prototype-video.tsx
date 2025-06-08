@@ -21,10 +21,11 @@ export default function PrototypeVideo({ className = "" }: PrototypeVideoProps) 
 
   return (
     <motion.div
-      className={`relative rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_84,_0.7)] dark:shadow-[0_20px_50px_rgba(34,_197,_94,_0.4)] ${className}`}
+      className="relative overflow-hidden rounded-3xl shadow-[0_20px_50px_rgba(8,112,84,0.7)] dark:shadow-[0_20px_50px_rgba(34,197,94,0.4)]"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.5 }}
+      style={{ width: '840px', height: '1860px' }}
     >
       <video
         ref={videoRef}
