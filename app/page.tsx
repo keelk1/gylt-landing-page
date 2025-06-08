@@ -2,6 +2,7 @@
 
 import type React from "react"
 
+import { Repeat } from "lucide-react";
 import Link from "next/link";
 import { useRef, useState } from "react"
 import { motion, useInView, useScroll, useTransform } from "framer-motion"
@@ -231,7 +232,7 @@ export default function Home() {
                 <div className="bg-green-100 dark:bg-green-900/30 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-inner">
                   <Repeat size={28} className="text-green-600 dark:text-green-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 dark:text-white">Changer de fournisseur d’énergie</h3>
+                <h3 className="text-xl font-semibold mb-2 dark:text-white">Changer de fournisseur facilement</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   gYlt repère les offres les plus avantageuses pour ton énergie, ton assurance, ton forfait téléphone/ internet et tous les services que tu utilises.
 👉 Tu choisis, on t’aide à changer en quelques clics.
