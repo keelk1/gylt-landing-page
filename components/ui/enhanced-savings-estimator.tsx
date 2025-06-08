@@ -59,8 +59,8 @@ export default function EnhancedSavingsEstimator() {
       // Calcul basé sur les pourcentages spécifiés
       const budgetValue = Number.parseFloat(budget)
       const subscriptionsSavings = budgetValue * 0.005 // 0.5% du budget
-      const timingSavings = budgetValue * 0.05 // 5% du budget
-      const goalsSavings = budgetValue * 0.05 // 5% du budget
+      const timingSavings = budgetValue * 0.01 // 5% du budget
+      const goalsSavings = budgetValue * 0.015 // 5% du budget
       const totalSavings = subscriptionsSavings + timingSavings + goalsSavings
 
       setSavings({
@@ -160,22 +160,22 @@ export default function EnhancedSavingsEstimator() {
           <div className="space-y-3 mt-4">
             <SavingsCard
               icon={<CreditCard size={18} className="text-green-600 dark:text-green-400" />}
-              title="Abonnements oubliés"
+              title="Abonnements oubliés & doublons"
               description="Identifie et supprime les services que tu n'utilises plus"
               amount={savings.subscriptions}
               delay={0.1}
             />
             <SavingsCard
               icon={<Calendar size={18} className="text-green-600 dark:text-green-400" />}
-              title="Meilleur timing"
-              description="Optimise tes achats en fonction des périodes favorables"
+              title="Changer de fournisseur"
+              description="Optimise tes contrats en fonction de la concurrence"
               amount={savings.timing}
               delay={0.2}
             />
             <SavingsCard
               icon={<Target size={18} className="text-green-600 dark:text-green-400" />}
-              title="Objectifs malins"
-              description="Fixe-toi des objectifs réalistes basés sur tes habitudes"
+              title="Éviter les achats inutiles"
+              description="Garde la main sur tes dépenses facilement et repère les postes inutiles"
               amount={savings.goals}
               delay={0.3}
             />
@@ -219,13 +219,13 @@ export default function EnhancedSavingsEstimator() {
             </p>
             <ul className="text-sm text-gray-600 dark:text-gray-300 space-y-1 pl-5 list-disc">
               <li>
-                <span className="font-medium">Abonnements oubliés</span> : 0,5% de ton budget mensuel (~10€ sur 2000€)
+                <span className="font-medium"> Abonnements oubliés & doublons</span> : 0,5% de ton budget mensuel (~10€ sur 2000€)
               </li>
               <li>
-                <span className="font-medium">Meilleur timing</span> : 5% de ton budget mensuel (~100€ sur 2000€)
+                <span className="font-medium">Changer de fournisseur</span> : 1% de ton budget mensuel (~20€ sur 2000€)
               </li>
               <li>
-                <span className="font-medium">Objectifs malins</span> : 5% de ton budget mensuel (~100€ sur 2000€)
+                <span className="font-medium">Éviter les achats inutiles</span> : 1,5% de ton budget mensuel (~30€ sur 2000€)
               </li>
             </ul>
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
