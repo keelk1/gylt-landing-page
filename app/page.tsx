@@ -229,11 +229,11 @@ export default function Home() {
                 whileHover={{ y: -5 }}
               >
                 <div className="bg-green-100 dark:bg-green-900/30 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-inner">
-                  <Calendar size={28} className="text-green-600 dark:text-green-400" />
+                  <Repeat size={28} className="text-green-600 dark:text-green-400" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2 dark:text-white">Changer de fournisseur d’énergie</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  gYlt repère les offres les plus avantageuses pour ton énergie, ton assurance, ton forfait téléphone/ internet et tout les services que tu utilise.
+                  gYlt repère les offres les plus avantageuses pour ton énergie, ton assurance, ton forfait téléphone/ internet et tous les services que tu utilises.
 👉 Tu choisis, on t’aide à changer en quelques clics.
                 </p>
                 <div className="mt-auto">
@@ -248,7 +248,7 @@ export default function Home() {
                 whileHover={{ y: -5 }}
               >
                 <div className="bg-green-100 dark:bg-green-900/30 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-inner">
-                  <Target size={28} className="text-green-600 dark:text-green-400" />
+                  <ShoppingCart size={28} className="text-green-600 dark:text-green-400" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2 dark:text-white">Éviter les achats inutiles</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
