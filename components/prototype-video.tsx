@@ -28,7 +28,9 @@ export default function PrototypeVideo({ className = "" }: PrototypeVideoProps) 
     >
       <video
         ref={videoRef}
-        className="w-full h-full object-cover"
+        width={840}
+        height={1860}
+        className="object-cover rounded-3xl"
         autoPlay
         loop
         muted
