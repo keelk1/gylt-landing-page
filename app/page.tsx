@@ -129,9 +129,9 @@ export default function Home() {
                 <HighlightText className="text-green-600 dark:text-green-400">Pourquoi gYlt ?</HighlightText>
               </SectionTitle>
               <p className="text-lg text-gray-600 dark:text-gray-300 text-center">
-                On voit un solde, des lignes comptables mais sans comprendre nos dépense.
+                Mieux gérer ton argent sans Excel ni culpabilité.
                 <br />
-                Résultat : aucune envie de s&apos;améliorer, aucune fierté de bien gérer.
+                gYlt transforme ton historique bancaire en insights clairs, concrets et activables — pour reprendre le contrôle et en tirer de la fierté.
               </p>
             </div>
           </SectionTransition>
@@ -140,21 +140,21 @@ export default function Home() {
             <WhyCard
               icon={<BarChart3 size={32} className="text-green-600 dark:text-green-400" />}
               title="Visualiser tes dépenses"
-              description="Tes dépenses compréhensibles en un coup d'œil."
+              description="En un coup d’œil, comprends où passe ton argent, sans jargon ni graphiques complexes."
               delay={0.1}
             />
 
             <WhyCard
               icon={<Lightbulb size={32} className="text-green-600 dark:text-green-400" />}
               title="Comprendre tes habitudes"
-              description="Découvre tes tendances de consommation et identifie facilement où tu peux économiser."
+              description="Découvre les tendances cachées de ta consommation. C’est souvent là que se trouvent les vraies économies."
               delay={0.2}
             />
 
             <WhyCard
               icon={<PiggyBank size={32} className="text-green-600 dark:text-green-400" />}
               title="Économiser sans efforts"
-              description="Reçois des suggestions personnalisées pour économiser sans sacrifier ton style de vie."
+              description="On te propose directement des optimisations concrètes, adaptées à ton mode de vie."
               delay={0.3}
             />
           </div>
@@ -214,7 +214,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2 dark:text-white">Abonnements oubliés</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  gYlt repère les paiements récurrents anciens ou doublons que tu n'utilises plus.
+                  On détecte les prélèvements oubliés, les doublons et les abonnements non utilisés.
                 </p>
                 <div className="mt-auto">
                   <p className="font-bold text-green-600 dark:text-green-400 text-lg">+12€/mois économisés</p>
