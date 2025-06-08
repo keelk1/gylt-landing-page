@@ -22,8 +22,8 @@ export default function PrototypeVideo({ className = "" }: PrototypeVideoProps) 
     <motion.div
       className={`rounded-[40px] overflow-hidden shadow-2xl ${className}`}
       style={{
-        width: '320px',
-        height: '930px',
+        width: '326px',
+        height: '720px',
         backgroundColor: 'black',
         display: 'flex',
         justifyContent: 'center',
