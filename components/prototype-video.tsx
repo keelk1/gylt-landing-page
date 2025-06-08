@@ -28,7 +28,7 @@ export default function PrototypeVideo({ className = "" }: PrototypeVideoProps) 
     >
       <video
         ref={videoRef}
-        className="w-full h-full object-cover rounded-3xl"
+        className="w-full h-full object-cover"
         autoPlay
         loop
         muted
