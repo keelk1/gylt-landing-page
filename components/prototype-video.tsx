@@ -19,21 +19,7 @@ export default function PrototypeVideo({ className = "" }: PrototypeVideoProps) 
   }, [])
 
   return (
-    <motion.div
-      className={`relative overflow-hidden rounded-[40px] shadow-2xl ${className}`}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: 0.5 }}
-      style={{
-        width: '240px',
-        height: '480px',
-        background: 'linear-gradient(135deg, #1f2937, #0f172a)',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
-      <video
+    <video
         ref={videoRef}
         className="rounded-[40px] object-cover"
         style={{
