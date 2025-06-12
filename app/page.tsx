@@ -355,14 +355,6 @@ export default function Home() {
           <SectionTransition type="zoom" delay={0.2}>
             <form onSubmit={handleSubmit} className="max-w-md mx-auto">
               <div className="flex flex-col sm:flex-row gap-3">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Ton adresse e-mail"
-                  required
-                  className="flex-1 px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500 shadow-md transition-all duration-300 bg-white/90 dark:bg-gray-800/90 text-gray-900 dark:text-white"
-                />
                 <AnimatedButton
                   type="submit"
                   className="bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 cursor-pointer transform hover:scale-105"
