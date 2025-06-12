@@ -53,7 +53,7 @@ export default function Home() {
       return
     }
 
-    const url = `https://script.google.com/macros/s/AKfycbymhXrSqPAwEelDgp1jEZcDD2Tl4yxHmCryUQ4gErBOeU--VsUTJ13BtdtvjEoYvDmZRA/exec?email=${encodeURIComponent(email)}`
+    const url = `https://script.google.com/macros/s/AKfycbymhXrSqPAwEelDgp1jEZcDD2Tl4yxHmCryUQ4gErBOeU--VsUTJ13BtdtvjEoYvDmZRA/exec?type=lead&source=landing&email=${encodeURIComponent(email)}`
 
     try {
       await fetch(url, { method: "GET", mode: "no-cors" })
