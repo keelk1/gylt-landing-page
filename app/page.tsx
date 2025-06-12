@@ -352,7 +352,7 @@ export default function Home() {
               <AnimatedButton
                 type="button"
                 onClick={() => {
-                  window.open("https://tally.so/r/xxxxx", "_blank") // Remplace ce lien par le bon
+                  window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGdbfitl2gvMB1MdYeIOQaIvYCaAuhlNW_LAcRBr4oy_52GQ/viewform?usp=header", "_blank") // Remplace ce lien par le bon
                 }}
                 className="bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 cursor-pointer transform hover:scale-105 text-center"
               >
