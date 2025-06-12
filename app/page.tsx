@@ -45,11 +45,23 @@ export default function Home() {
 
   const { scrollToSection } = useScrollToSection()
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Traitement du formulaire ici
-    alert(`Merci de votre intérêt ! Nous vous contacterons à ${email}`)
-    setEmail("")
+
+    if (!email || !email.includes("@")) {
+      alert("Merci d’entrer une adresse e-mail valide.")
+      return
+    }
+
+    const url = `https://script.google.com/macros/s/AKfycbymhXrSqPAwEelDgp1jEZcDD2Tl4yxHmCryUQ4gErBOeU--VsUTJ13BtdtvjEoYvDmZRA/exec?type=lead&source=landing&email=${encodeURIComponent(email)}`
+
+    try {
+      await fetch(url, { method: "GET", mode: "no-cors" })
+      alert("Merci pour ton inscription 🙌")
+      setEmail("") // reset du champ
+    } catch (error) {
+      console.error("Erreur lors de l'envoi de l’email :", error)
+    }
   }
 
   const sectionIds = ["hero", "why", "how", "savings", "business", "signup"]
