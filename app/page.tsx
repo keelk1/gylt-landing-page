@@ -341,7 +341,7 @@ export default function Home() {
             <div className="max-w-3xl mx-auto mb-10">
               <SectionTitle alignment="center" highlightText={false}>
                 <HighlightText className="text-green-600 dark:text-green-400">
-                  Exprime toi et prend de nos nouvelles
+                  Exprime toi et reste au courant
                 </HighlightText>
               </SectionTitle>
             </div>
