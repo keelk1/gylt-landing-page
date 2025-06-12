@@ -48,11 +48,6 @@ export default function Home() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    if (!email || !email.includes("@")) {
-      alert("Merci d’entrer une adresse e-mail valide.")
-      return
-    }
-
     const url = `https://script.google.com/macros/s/AKfycbymhXrSqPAwEelDgp1jEZcDD2Tl4yxHmCryUQ4gErBOeU--VsUTJ13BtdtvjEoYvDmZRA/exec?type=lead&source=landing&email=${encodeURIComponent(email)}`
 
     try {
@@ -353,19 +348,20 @@ export default function Home() {
           </SectionTransition>
 
           <SectionTransition type="zoom" delay={0.2}>
-            <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-              <div className="flex flex-col sm:flex-row gap-3">
-                <AnimatedButton
-                  type="submit"
-                  className="bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 cursor-pointer transform hover:scale-105"
-                >
-                  Reste au courant et fait tes retours
-                </AnimatedButton>
-              </div>
+            <div className="max-w-md mx-auto flex flex-col items-center">
+              <AnimatedButton
+                type="button"
+                onClick={() => {
+                  window.open("https://tally.so/r/xxxxx", "_blank") // Remplace ce lien par le bon
+                }}
+                className="bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 cursor-pointer transform hover:scale-105 text-center"
+              >
+                Reste au courant et fait tes retours
+              </AnimatedButton>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-3 text-center">
-                Aide nous a améliorer le produit qui va te faire économiser. Promis, pas de spam.
+                Aide nous à améliorer le produit qui va te faire économiser. Promis, pas de spam.
               </p>
-            </form>
+            </div>
           </SectionTransition>
         </div>
       </section>
