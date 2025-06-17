@@ -387,16 +387,9 @@ export default function Home() {
               <Link href="/mentions-legales" className="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors cursor-pointer hover:underline">
                 Mentions légales
               </Link>
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault()
-                  alert("La politique de confidentialité sera disponible prochainement.")
-                }}
-                className="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors cursor-pointer hover:underline"
-              >
-                Politique de confidentialité
-              </a>
+              <Link href="/politique-de-confidentialité" className="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors cursor-pointer hover:underline">
+                Mentions légales
+              </Link>
             </div>
           </div>
         </div>
