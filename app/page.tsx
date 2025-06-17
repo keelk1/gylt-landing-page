@@ -384,16 +384,9 @@ export default function Home() {
             </div>
 
             <div className="flex gap-6">
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault()
-                  alert("Éditeur du site : ozjebfiazbjefjioarezb")
-                }}
-                className="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors cursor-pointer hover:underline"
-              >
+              <Link href="/mentions-legales" className="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors cursor-pointer hover:underline">
                 Mentions légales
-              </a>
+              </Link>
               <a
                 href="#"
                 onClick={(e) => {
