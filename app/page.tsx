@@ -388,7 +388,27 @@ export default function Home() {
                 href="#"
                 onClick={(e) => {
                   e.preventDefault()
-                  alert("Les mentions légales seront disponibles prochainement.")
+                  alert("Éditeur du site :
+gYlt
+Edgar TISSOT
+Adresse communiquée sur demande
+Email : contact@gylt.space
+
+Hébergement :
+Vercel Inc.
+440 N Barranca Ave #4133
+Covina, CA 91723 (USA)
+
+Responsable de la publication :
+Edgar TISSOT
+Étudiant - SKEMA Business School
+
+Propriété intellectuelle :
+Le site et son contenu sont la propriété exclusive de Edgar TISSOT. Toute reproduction est interdite sans autorisation.
+
+Conditions d’utilisation :
+Ce site est proposé à titre informatif. L’usage des données et recommandations est laissé à l’appréciation de l’utilisateur.
+")
                 }}
                 className="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors cursor-pointer hover:underline"
               >
