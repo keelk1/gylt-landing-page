@@ -388,7 +388,7 @@ export default function Home() {
                 Mentions légales
               </Link>
               <Link href="/politique-de-confidentialité" className="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors cursor-pointer hover:underline">
-                Mentions légales
+                Politique de confidentialité
               </Link>
             </div>
           </div>
