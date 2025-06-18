@@ -88,7 +88,7 @@ export default function Home() {
               </h1>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-900 dark:text-white">
                 <HighlightText className="text-green-600 dark:text-green-400" isSpecial={true}>
-                  t&apos;ennuie ?
+                  t&apos;angoisse et t&apos;ennuie ?
                 </HighlightText>
               </h1>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-8 text-gray-700 dark:text-gray-300">
