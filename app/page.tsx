@@ -88,7 +88,7 @@ export default function Home() {
               </h1>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-900 dark:text-white">
                 <HighlightText className="text-green-600 dark:text-green-400" isSpecial={true}>
-                  t&apos;angoisse et t&apos;ennuie ?
+                  t&apos;angoisse, t&apos;ennuie ?
                 </HighlightText>
               </h1>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-8 text-gray-700 dark:text-gray-300">
@@ -138,7 +138,7 @@ export default function Home() {
                 <HighlightText className="text-green-600 dark:text-green-400">Pourquoi gYlt ?</HighlightText>
               </SectionTitle>
               <p className="text-lg text-gray-600 dark:text-gray-300 text-center">
-                70 % des utilisateurs quittent une appli de finance dans les 24 h, et plus de 90 % sous 30 jours.
+                70 % des utilisateurs quittent une appli de finance dans les 24 h.
                 <br />
                 gYlt transforme ton historique bancaire en insights clairs, concrets et activables pour reprendre le contrôle, en tirer de la fierté, le tout sans Excel ni culpabilité.
               </p>
@@ -149,7 +149,8 @@ export default function Home() {
             <WhyCard
               icon={<BarChart3 size={32} className="text-green-600 dark:text-green-400" />}
               title="Visualiser tes dépenses"
-              description="En un coup d’œil, comprends où passe ton argent, sans jargon ni graphiques complexes."
+              description="En un coup d’œil, comprends où passe ton argent, sans jargon ni graphiques complexes.    77 % des jeunes craignent les imprévus : on clarifie leurs dépenses.
+"
               delay={0.1}
             />
 
