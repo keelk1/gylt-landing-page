@@ -138,9 +138,9 @@ export default function Home() {
                 <HighlightText className="text-green-600 dark:text-green-400">Pourquoi gYlt ?</HighlightText>
               </SectionTitle>
               <p className="text-lg text-gray-600 dark:text-gray-300 text-center">
-                Mieux gérer ton argent sans Excel ni culpabilité.
+                70 % des utilisateurs quittent une appli de finance dans les 24 h, et plus de 90 % sous 30 jours.
                 <br />
-                gYlt transforme ton historique bancaire en insights clairs, concrets et activables — pour reprendre le contrôle et en tirer de la fierté.
+                gYlt transforme ton historique bancaire en insights clairs, concrets et activables pour reprendre le contrôle, en tirer de la fierté, le tout sans Excel ni culpabilité.
               </p>
             </div>
           </SectionTransition>
