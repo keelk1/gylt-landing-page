@@ -158,7 +158,7 @@ export default function Home() {
                 </>
               }
               delay={0.1}
-/            />
+            />
 
             <WhyCard
               icon={<Lightbulb size={32} className="text-green-600 dark:text-green-400" />}
