@@ -149,10 +149,16 @@ export default function Home() {
             <WhyCard
               icon={<BarChart3 size={32} className="text-green-600 dark:text-green-400" />}
               title="Visualiser tes dépenses"
-              description="En un coup d’œil, comprends où passe ton argent, sans jargon ni graphiques complexes.    77 % des jeunes craignent les imprévus : on clarifie leurs dépenses.
-"
+              description={
+                <>
+                  En un coup d’œil, comprends où passe ton argent, sans jargon ni graphiques complexes.<br />
+                  <span className="text-green-400 font-semibold">
+                    77&nbsp;% des jeunes craignent les imprévus&nbsp;: on clarifie leurs dépenses.
+                  </span>
+                </>
+              }
               delay={0.1}
-            />
+/            />
 
             <WhyCard
               icon={<Lightbulb size={32} className="text-green-600 dark:text-green-400" />}
