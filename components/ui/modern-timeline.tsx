@@ -110,7 +110,7 @@ export default function ModernTimeline() {
     {
       step: 1,
       title: "Connecte ta banque",
-      description: "Liaison sécurisée avec ton compte bancaire pour importer tes transactions automatiquement.",
+      description: "Liaison sécurisée avec ton compte bancaire pour importer tes transactions automatiquement (chiffrement bancaire, RGPD).",
       icon: <CreditCard size={24} className="text-white" />,
     },
     {
@@ -121,8 +121,8 @@ export default function ModernTimeline() {
     },
     {
       step: 3,
-      title: "Suis tes progrès chaque mois",
-      description: "Reçois des mises à jour mensuelles et vois ton évolution financière au fil du temps.",
+      title: "Suis tes dépenses chaque mois",
+      description: "Reçois des mises à jour mensuelles et vois ton évolution financière évoluer au fil du temps.",
       icon: <TrendingUp size={24} className="text-white" />,
     },
   ]
