@@ -153,7 +153,7 @@ export default function Home() {
                 <>
                   En un coup d’œil, comprends où passe ton argent, sans jargon ni graphiques complexes.<br />
                   <span className="text-green-400 font-semibold">
-                    77&nbsp;% des jeunes craignent les imprévus&nbsp;: on clarifie leurs dépenses.
+                    77&nbsp;% des jeunes craignent les imprévus&nbsp.
                   </span>
                 </>
               }
@@ -163,15 +163,29 @@ export default function Home() {
             <WhyCard
               icon={<Lightbulb size={32} className="text-green-600 dark:text-green-400" />}
               title="Comprendre tes habitudes"
-              description="Découvre les tendances cachées de ta consommation. C’est souvent là que se trouvent les vraies économies."
-              delay={0.2}
+              description={
+                <>
+                  Découvre les tendances cachées de ta consommation. C’est souvent là que se trouvent les vraies économies.<br />
+                  <span className="text-green-400 font-semibold">
+                    77&nbsp;% des jeunes craignent les imprévus&nbsp.
+                  </span>
+                </>
+              }
+              delay={0.1}
             />
 
             <WhyCard
               icon={<PiggyBank size={32} className="text-green-600 dark:text-green-400" />}
               title="Économiser sans efforts"
-              description="On te propose directement des optimisations concrètes, adaptées à ton mode de vie."
-              delay={0.3}
+              description={
+                <>
+                  On te propose directement des optimisations concrètes, adaptées à ton mode de vie.<br />
+                  <span className="text-green-400 font-semibold">
+                    77&nbsp;% des jeunes craignent les imprévus&nbsp.
+                  </span>
+                </>
+              }
+              delay={0.1}
             />
           </div>
         </div>
