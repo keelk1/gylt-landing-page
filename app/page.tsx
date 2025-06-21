@@ -153,7 +153,7 @@ export default function Home() {
                 <>
                   En un coup d’œil, comprends où passe ton argent, sans jargon ni graphiques complexes.<br />
                   <span className="text-green-400 font-semibold">
-                    77&nbsp;% des jeunes craignent les imprévus&nbsp.
+                    77&nbsp;% des jeunes craignent les dépenses imprévus.
                   </span>
                 </>
               }
@@ -167,7 +167,7 @@ export default function Home() {
                 <>
                   Découvre les tendances cachées de ta consommation. C’est souvent là que se trouvent les vraies économies.<br />
                   <span className="text-green-400 font-semibold">
-                    77&nbsp;% des jeunes craignent les imprévus&nbsp.
+                    Seuls 21 % des Gen Z exploitent la fonction budget de leur app finance. 
                   </span>
                 </>
               }
@@ -181,7 +181,7 @@ export default function Home() {
                 <>
                   On te propose directement des optimisations concrètes, adaptées à ton mode de vie.<br />
                   <span className="text-green-400 font-semibold">
-                    77&nbsp;% des jeunes craignent les imprévus&nbsp.
+                    94 % des Gen Z ont déjà coupé une dépense pour épargner.
                   </span>
                 </>
               }
