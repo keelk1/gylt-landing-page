@@ -1,30 +1,50 @@
-# gYlt landing page
+# gylt‑landing‑page – Marketing & Waitlist
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+✨ Overview
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/keelk1s-projects/v0-g-ylt-landing-page)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/fS8xUiKXTjI)
+gylt‑landing‑page is the public marketing site powering gylt.space. It captures emails for the private beta and explains the value proposition in <1 min.
 
-## Overview
+Key facts :
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+Built with : v0.dev → React/Next.js export
 
-## Deployment
+Forms : Native <form> + Netlify Forms OR Google Apps Script (toggleable)
 
-Your project is live at:
+Analytics : Vercel Analytics + script sendToSheet.js (centralised waitlist)
 
-**[https://vercel.com/keelk1s-projects/v0-g-ylt-landing-page](https://vercel.com/keelk1s-projects/v0-g-ylt-landing-page)**
+🚀 Quick start
 
-## Build your app
+pnpm i
+pnpm dev          # localhost:3000
 
-Continue building your app on:
+🔧 Required env
 
-**[https://v0.dev/chat/projects/fS8xUiKXTjI](https://v0.dev/chat/projects/fS8xUiKXTjI)**
+Key
 
-## How It Works
+Example
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Purpose
+
+NEXT_PUBLIC_GA_ID
+
+G‑XXXXXXX
+
+Google Analytics
+
+EMAIL_WEBHOOK_URL
+
+https://script.google.com/…
+
+Waitlist capture
+
+✍️ Customisation tips
+
+Modify content/home.tsx for hero copy & CTA labels.
+
+Logos live in /public/assets/; optimise <100 KB for performance score 95 +.
+
+Update meta tags in app/layout.tsx for SEO & social previews.
+
+🌐 Deployment
+
+Pushes to main auto‑deploy on Vercel → gylt.space. A staging branch (preview) is also configured.
